@@ -1,0 +1,43 @@
+<!DOCTYPE html><!--문서의 HTML 버전을 지정-->
+<html lang="ko">
+<head><!--웹페이지의 정보가 들어있음-->
+    <!--메타 태그는 HTML 문서(웹페이지의 제작자, 내용, 키워드 같은, 여러정보를 검색엔진이나 브라우저에게 제공.-->
+    <meta charset="UTF-8"> <!--문자인코딩 방식-->
+    <meta name ="author" content ="Juno"> <!--제작자-->
+    <meta name="viewport" content="width=device-width, initial-scale="> <!--정보의 종류, 정보의 값-->
+    <title>Title</title> <!--웹브라우저의 탭에 표시됨-->
+    <link rel ="stylesheet" href="='./main.css"> <!--rel : 외부 문서를 가져와 연결할 때 사용.(대부분 CSS 파일-->
+    <link rel ="icon" href="='./favicon.png"><!--href : 파일의 경로 (HyperText REFrence)-->
+    <style>
+        div{
+            color: green;
+        }
+        span{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div><!--블록(상자)요소 특별한 의미가 없는 구분을 위한 요소. (Division)-->
+        <h1>오늘의 날씨</h1><!--제목을 의미하는 요소 Heading (블록요소) h1~h6 : 숫자가 작을 수록 더 중요한 제목을 정의-->
+        <p>중부 집중호우, 남부는 열대야, 12호 태풍 북상 중..</p>
+        <img src ="./img/weather.jpg" alt="12호 태풍"><!--img : 이미지 태그-->
+    </div>
+    <ul><!--블록요소 : 순서가 필요없는 목록의 집합을 의미. (Unordered List)-->
+        <li>사과</li> <!--블록요소 : 목록내 각 항목 (List Item)-->
+        <li>딸기</li>
+        <li>수박</li>
+        <li>오렌지</li>
+        <a href="https://www.naver.com">Naver</a><!--하이퍼링크 요소 : 인라인(글자)요소이지만 a 태그는 블록요소를 딱 1개 넣을 수 있다. Anchor-->
+        <a href="https://www.google.com" target="_blank">Google</a>  <!--target : 이동하는 페이지를 현재페이지에서 출력할 것인지 새 페이지에서 열것인지-->
+        <p>
+            <span>동해물</span>과 백두산이<br> 마르고 닳도록<!--span에 해당하는 것만 CSS를 변경할 수 있다.-->
+            <!--br 태그는 줄바꿈 태그 : 줄바꿈 요소(Break)-->
+        </p>
+        <input type="text" value="HEROPY!"> <!--사용자가 데이터를 입력하는 요소 : 인라인-블록요소 , type 으로 입력받을 데이터의 타입-->
+        <!--value 속성은 미리입력된 값을 나타낼때 사용-->
+        <input type="text" placeholder="이름을 입력하세요!"> <!--placeholder : 사용자가 입력할 값(데이터)의 힌트-->
+        <input type="text" disabled> <!--사용자가 입력할 수 없게 만듬 (비활성화) JS를 통해서 상황을 제어 할 수 있음.-->
+    </ul>
+</body>
+</html>
