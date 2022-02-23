@@ -1,0 +1,19 @@
+.container .item{
+    color: yellowgreen;
+    border: 2px solid black;
+    line-height: 2;
+    font-size: 16px;
+    font-style: italic;
+    text-align: center;
+    margin-bottom : 5px;
+}
+
+.container .item:nth-child(2){
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/*
+font 로 시작하는 속성은 글꼴, 크기, 기울기, 두께에 관련
+text- 로 시작하는 건 정령, 줄, 넘침과 관련 (문자와 관련된 속성)
+*/

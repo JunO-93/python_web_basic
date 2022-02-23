@@ -1,0 +1,38 @@
+/*
+div::after{
+    content: "123";
+    color: red;
+    font-size: 20px;
+}
+
+[disabled] {
+    background-color: red;
+}
+
+[type="password"] {
+    color: red;
+}
+
+*/
+
+.container{
+
+}
+
+.container .item{
+    width: 200px;
+    height: 100px;
+    background-color: tomato;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 4px dashed blue;
+    box-sizing: border-box; /*무조건 요소의 크기를 width, height를 사용하고 싶을 때 사용*/
+}
+
+.container .item:nth-child(2) {
+    box-shadow: 10px 20px 10px rgba(0,0,0,.3); /*x축 y축 흐림처리(블러) rgba(r,g,b,투명도)*/
+}
+
+.container .item:nth-child(3) {
+    opacity: 0.5; /*요소는 존재하나 투명도로 조절 가능 0은 완전투명 */
+}
